@@ -13,3 +13,18 @@ Objectives
 3. Analyze festival and marketing impact
 4. Improve inventory decision-making
 5. Reduce overstock and stockout risk
+
+---
+Key Insights
+1. Higher discounts increase demand
+2. Marketing spend positively impacts sales
+3. Festival periods significantly boost demand
+4. High base price reduces demand
+5. Temperature slightly affects buying behavior
+
+---
+How to Use
+Run this command in terminal:
+```
+pip install -r requirements.txt
+```
