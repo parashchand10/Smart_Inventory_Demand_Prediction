@@ -42,21 +42,21 @@ Raw Data (CSV)
 
 ## 📈 Benchmark & Model Performance
 
-Models were trained on 800 observations and benchmarked on a strictly held-out test split of 200 observations[cite: 1].
+Models were trained on 800 observations and benchmarked on a strictly held-out test split of 200 observations.
 
 | Algorithm | MSE | R² Score | Notes |
 | :--- | :---: | :---: | :--- |
-| **Linear Regression** | **105.93** | **0.7429** | Highest aggregate test score across linear relationships[cite: 1] |
-| **SVR (Tuned: C=100, Linear)** | 110.99 | 0.7306 | High margin-of-tolerance stability[cite: 1] |
-| **Bagging Regressor (SVR Base)** | 111.65 | 0.7290 | Reduced variance over standard SVR[cite: 1] |
-| **Stacking Regressor** | 111.65 | 0.7290 | Combined LR, SVR, and DecisionTree with SVR meta-learner[cite: 1] |
-| **Bagging Regressor (Random Forest)** | 118.19 | 0.7132 | High robustness against non-linear fluctuations[cite: 1] |
-| **Gradient Boosting** | 121.07 | 0.7062 | 100 boosting stages[cite: 1] |
-| **Bagging Regressor (Decision Tree)** | 122.48 | 0.7028 | Exceptional point accuracy on sample validation points[cite: 1] |
-| **AdaBoost Regressor** | 122.57 | 0.7025 | Standard exponential error re-weighting[cite: 1] |
-| **XGBoost Regressor** | 143.48 | 0.6518 | Slight sensitivity to localized sub-sample variance[cite: 1] |
+| **Linear Regression** | **105.93** | **0.7429** | Highest aggregate test score across linear relationships |
+| **SVR (Tuned: C=100, Linear)** | 110.99 | 0.7306 | High margin-of-tolerance stability |
+| **Bagging Regressor (SVR Base)** | 111.65 | 0.7290 | Reduced variance over standard SVR |
+| **Stacking Regressor** | 111.65 | 0.7290 | Combined LR, SVR, and DecisionTree with SVR meta-learner |
+| **Bagging Regressor (Random Forest)** | 118.19 | 0.7132 | High robustness against non-linear fluctuations |
+| **Gradient Boosting** | 121.07 | 0.7062 | 100 boosting stages |
+| **Bagging Regressor (Decision Tree)** | 122.48 | 0.7028 | Exceptional point accuracy on sample validation points |
+| **AdaBoost Regressor** | 122.57 | 0.7025 | Standard exponential error re-weighting |
+| **XGBoost Regressor** | 143.48 | 0.6518 | Slight sensitivity to localized sub-sample variance |
 
-> **Production Recommendation:** While Linear Regression achieved the top nominal $R^2$, the **Bagging Decision Tree** model exhibited superior generalization and stability on granular edge tests (predicting **30.48** units against actual observed ground-truth of **31** units)[cite: 1].
+> **Production Recommendation:** While Linear Regression achieved the top nominal $R^2$, the **Bagging Decision Tree** model exhibited superior generalization and stability on granular edge tests (predicting **30.48** units against actual observed ground-truth of **31** units).
 
 ---
 
