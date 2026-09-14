@@ -3,6 +3,7 @@
 An end-to-end regression pipeline designed to forecast SKU-level daily demand by evaluating price elasticity, promotional efficiency, and seasonal drivers. Built to help supply chain teams prevent stockouts and curb inventory holding costs using distributed exploration and ensemble modeling.
 
 
+
 ## Project Overview
 
 Inventory miscalculations directly impact bottom-line profitability: overstocking ties up working capital and inflates warehousing costs, while stockouts result in lost revenue and degraded customer retention.
@@ -12,6 +13,7 @@ This project analyzes retail transaction intervals across 10 core market indicat
 - Exploratory data analysis and feature engineering (effective pricing, marketing efficiency indices).
 - Rigorous comparative benchmarking across baseline, kernel-based, bagging, boosting, and stacking regressors.
 - Production-ready serialization (`pickle`) for real-time inference.
+
 
 
 ## Architecture & Workflow
@@ -36,6 +38,7 @@ Raw Data (CSV)
   └──► Artifact Export (smart_inventory_model.pkl, scaler.pkl)
 ```
 
+
 ## 📈 Benchmark & Model Performance
 
 Models were trained on 800 observations and benchmarked on a strictly held-out test split of 200 observations[cite: 1].
@@ -55,7 +58,6 @@ Models were trained on 800 observations and benchmarked on a strictly held-out t
 > **Production Recommendation:** While Linear Regression achieved the top nominal $R^2$, the **Bagging Decision Tree** model exhibited superior generalization and stability on granular edge tests (predicting **30.48** units against actual observed ground-truth of **31** units)[cite: 1].
 
 
-## Quickstart & Usage
 
 ### Clone & Setup Environment
 ```bash
