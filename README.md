@@ -35,7 +35,7 @@ Raw Data (CSV)
   │      ├── Stacking (LinearRegression + SVR + DecisionTree -> SVR Meta-Model)
   │      └── Boosting (AdaBoost, GradientBoosting, XGBoost)
   │
-  └──► Artifact Export (smart_inventory_model.pkl, scaler.pkl)
+  └──► Deployment Model File (smart_inventory_model.pkl, scaler.pkl)
 ```
 
 ---
