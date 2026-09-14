@@ -1,4 +1,4 @@
-readme_content = """# Smart Inventory Demand Forecasting - Machine Learning
+# Smart Inventory Demand Forecasting - Machine Learning
 
 An end-to-end regression pipeline designed to forecast SKU-level daily demand by evaluating price elasticity, promotional efficiency, and seasonal drivers. Built to help supply chain teams prevent stockouts and curb inventory holding costs using distributed exploration and ensemble modeling.
 
